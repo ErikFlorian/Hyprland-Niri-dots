@@ -7,8 +7,8 @@ The repository bundles the original desktop configuration plus a full bootstrap 
 ## Install
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_DIRECTORY>
+git clone https://github.com/ErikFlorian/Hyprland-Niri-dots
+cd Hyprland-Niri-dots
 chmod +x install.sh
 ./install.sh
 ```
