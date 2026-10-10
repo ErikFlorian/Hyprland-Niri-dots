@@ -1,0 +1,3 @@
+# Retained for reference; not installed by either compositor profile.
+sway
+swayidle

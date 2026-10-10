@@ -1,0 +1,122 @@
+{
+  "generated_date": "2026-10-10",
+  "installer_executed": false,
+  "tools": [
+    {
+      "name": "HyprLTM-Net",
+      "source": "local snapshot from ~/.local/bin/hyprltm-net and ~/.local/bin/modules",
+      "upstream": "https://github.com/hyprltm/hyprltm-net",
+      "version": "0.5.0",
+      "license": "GPL-3.0 (upstream)",
+      "included_files": [
+        "payload/home/.local/bin/hyprltm-net",
+        "payload/home/.local/bin/modules",
+        "payload/config/hyprltm/hyprltm-net.conf"
+      ],
+      "required_runtime": [
+        "bash",
+        "rofi",
+        "NetworkManager (nmcli)",
+        "coreutils",
+        "grep",
+        "awk",
+        "sed",
+        "iproute2"
+      ],
+      "optional_runtime": {
+        "Bluetooth controls": [
+          "bluez (bluetoothctl)"
+        ],
+        "hotspot creation": [
+          "dnsmasq"
+        ],
+        "Wi-Fi QR codes": [
+          "qrencode"
+        ],
+        "speed test": [
+          "curl",
+          "iputils (ping)"
+        ],
+        "notifications": [
+          "libnotify",
+          "a notification daemon"
+        ],
+        "OpenVPN import": [
+          "NetworkManager-openvpn"
+        ],
+        "WireGuard": [
+          "wireguard-tools",
+          "NetworkManager WireGuard support"
+        ]
+      },
+      "notes": [
+        "The entrypoint loads modules relative to its own location; keep the sibling modules directory intact.",
+        "Desktop launcher uses a quoted @DOTFILES_HOME@ path for HOME values containing spaces.",
+        "NetworkManager connection profiles, passwords, and VPN profiles are not included."
+      ]
+    },
+    {
+      "name": "Noctalia wallpaper launcher",
+      "source": "portable replacement for local rofi-wallpaper wrapper",
+      "runtime": [
+        "noctalia"
+      ],
+      "notes": [
+        "Opens the Noctalia wallpaper panel and works from the niri desktop session."
+      ]
+    },
+    {
+      "name": "Opaque local executable /usr/local/bin/fetch",
+      "source": "unowned ELF binary; no local source repository, package owner, or reproducible build metadata found",
+      "included": false,
+      "notes": [
+        "Not copied into the portable bundle because its origin and reproducible installation method could not be established."
+      ]
+    },
+    {
+      "name": "Ke\u010d\u00ednok v3.0",
+      "source": "local snapshot from ~/.local/bin/kecheenok1.py; no public source repository, license metadata, or package metadata found",
+      "included_files": [
+        "payload/home/.local/bin/kecheenok1.py",
+        "payload/home/.local/bin/kecheenok",
+        "payload/data/applications/Kecheenok.desktop"
+      ],
+      "runtime": [
+        "Python 3.14 isolated environment",
+        "yt-dlp==2026.8.19",
+        "ffmpeg",
+        "ffprobe",
+        "tk"
+      ],
+      "optional_runtime": [
+        "customtkinter (script has a built-in tkinter fallback)"
+      ],
+      "python_environment": "The full installer owns the isolated environment at ${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles/python; launcher checks its interpreter and does not install packages at runtime.",
+      "portability_changes": [
+        "Removed runtime pip install of yt-dlp.",
+        "Removed download/extraction of Windows-only ffmpeg.exe binaries.",
+        "Checks for ffmpeg and ffprobe on PATH and shows an actionable Arch ffmpeg package message when missing."
+      ],
+      "safety_review": [
+        "AST heuristic found no secret-like assigned literals or private IPv4 literals.",
+        "The script downloads URLs submitted by the user through yt-dlp; as with any downloader, the user controls those remote URLs.",
+        "No source app logs, user download directories, or credentials are included."
+      ],
+      "notes": [
+        "No executable code was run during this review.",
+        "Ke\u010d\u00ednok launcher runs the app through the installer-managed isolated Python interpreter."
+      ]
+    }
+  ],
+  "fetch_snapshot": {
+    "source": "/usr/local/bin/fetch",
+    "destination": "payload/home/.local/bin/fetch",
+    "provenance": "Unknown upstream; preserved local x86_64 binary, NEEDED libc/libm, checksum recorded in python-and-git.json",
+    "executed": false
+  },
+  "final_export_decisions": [
+    "Local /usr/local/bin/fetch was ultimately retained as a checksum-recorded binary snapshot.",
+    "Missing imported distributions make LG TV/MSS/PyInstaller launchers stale; only working Python commands are rebuilt.",
+    "Kecheenok startup dependencies are prepared in an isolated full-profile Python environment."
+  ]
+}

@@ -1,0 +1,21 @@
+# Shared optional AUR applications; installed by the full profile for either compositor.
+anydesk-bin
+claude-code
+claude-desktop
+mpvpaper
+onlyoffice-bin
+openai-codex-bin
+outlook-for-linux-bin
+p3x-onenote-bin
+teams-for-linux-bin
+termrain-bin
+theclicker
+unimatrix-git
+vesktop-bin
+visual-studio-code-bin
+waypaper
+whatsapp-linux-desktop-bin
+wlogout
+xclicker
+yt-x
+zen-browser-bin

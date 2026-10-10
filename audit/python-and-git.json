@@ -1,0 +1,42 @@
+{
+  "installed_local_python": {
+    "anthropic": "1.12.1",
+    "alpaca-py": "0.44.0",
+    "pandas": "3.0.6",
+    "python-dotenv": "1.2.4",
+    "bcsfe": "3.6.0",
+    "yt-dlp": "2026.8.19",
+    "httpx2": "2.13.1",
+    "websockets": "17.2"
+  },
+  "restoration": "Working user-requested packages restored inside isolated dotfiles/python; console tools installed via uv tool. Arch python is not modified with pip.",
+  "stale_wrappers_not_recreated": [
+    "lgtv",
+    "bscpylgtvcommand",
+    "mss",
+    "pyinstaller",
+    "wsdump"
+  ],
+  "stale_reason": "Launcher files remain on source but their imported distributions are absent; not functioning installed applications.",
+  "git_tools": {
+    "hyprmod": {
+      "source": "https://github.com/BlueManCZ/hyprmod",
+      "tag": "v0.5.0",
+      "commit": "e148d221cc62edaa8d1b8ffac0f0a57edcb8e3c1",
+      "target": "data/dotfiles/tools/hyprmod",
+      "origin": "Upstream pyproject and source Git refs verified read-only."
+    }
+  },
+  "local_binary": {
+    "source": "/usr/local/bin/fetch",
+    "payload": "payload/home/.local/bin/fetch",
+    "architecture": "x86_64 ELF",
+    "needed": [
+      "libc.so.6",
+      "libm.so.6"
+    ],
+    "upstream": "Unknown; local working binary snapshot preserved without execution.",
+    "sha256": "2b0c09e1001c21ba3f7d7a082f0c37b72dcee0d1b4636f457d2215fd4ffd700e"
+  },
+  "installer_executed": false
+}

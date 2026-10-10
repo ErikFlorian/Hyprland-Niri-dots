@@ -1,0 +1,415 @@
+[
+  {
+    "root": "config",
+    "path": "niri",
+    "compositors": [
+      "niri"
+    ]
+  },
+  {
+    "root": "config",
+    "path": "kitty"
+  },
+  {
+    "root": "config",
+    "path": "foot"
+  },
+  {
+    "root": "config",
+    "path": "fuzzel"
+  },
+  {
+    "root": "config",
+    "path": "rofi"
+  },
+  {
+    "root": "config",
+    "path": "noctalia"
+  },
+  {
+    "root": "config",
+    "path": "nirimod",
+    "compositors": [
+      "niri"
+    ]
+  },
+  {
+    "root": "config",
+    "path": "gtk-3.0"
+  },
+  {
+    "root": "config",
+    "path": "gtk-4.0"
+  },
+  {
+    "root": "config",
+    "path": "qt5ct"
+  },
+  {
+    "root": "config",
+    "path": "qt6ct"
+  },
+  {
+    "root": "config",
+    "path": "Kvantum"
+  },
+  {
+    "root": "config",
+    "path": "yazi"
+  },
+  {
+    "root": "config",
+    "path": "easyeffects"
+  },
+  {
+    "root": "config",
+    "path": "fontconfig"
+  },
+  {
+    "root": "config",
+    "path": "xsettingsd"
+  },
+  {
+    "root": "config",
+    "path": "networkmanager-dmenu"
+  },
+  {
+    "root": "config",
+    "path": "fastfetch"
+  },
+  {
+    "root": "config",
+    "path": "btop"
+  },
+  {
+    "root": "config",
+    "path": "micro"
+  },
+  {
+    "root": "config",
+    "path": "bat"
+  },
+  {
+    "root": "config",
+    "path": "bottom"
+  },
+  {
+    "root": "config",
+    "path": "cava"
+  },
+  {
+    "root": "config",
+    "path": "glow"
+  },
+  {
+    "root": "config",
+    "path": "lazygit"
+  },
+  {
+    "root": "config",
+    "path": "htop"
+  },
+  {
+    "root": "config",
+    "path": "nwg-look"
+  },
+  {
+    "root": "config",
+    "path": "Thunar"
+  },
+  {
+    "root": "config",
+    "path": "zed/settings.json"
+  },
+  {
+    "root": "config",
+    "path": "zed/themes/noctalia.json"
+  },
+  {
+    "root": "config",
+    "path": "Code/User/settings.json"
+  },
+  {
+    "root": "home",
+    "path": ".p10k.zsh"
+  },
+  {
+    "root": "home",
+    "path": ".gtkrc-2.0"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/mac-changer-rofi.sh"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/monitor-brightness-rofi.sh"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/equalizer-live-rofi.sh"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/screenshare-rofi.sh"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/brightness-rofi.sh"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/Wifi_reboot.sh"
+  },
+  {
+    "root": "home",
+    "path": "Wallpapers"
+  },
+  {
+    "root": "data",
+    "path": "icons/volantes_cursors"
+  },
+  {
+    "root": "data",
+    "path": "icons/Tela-black"
+  },
+  {
+    "root": "data",
+    "path": "icons/Tela-black-dark"
+  },
+  {
+    "root": "data",
+    "path": "icons/Tela-black-light"
+  },
+  {
+    "root": "data",
+    "path": "icons/default"
+  },
+  {
+    "root": "state",
+    "path": "noctalia/settings.toml"
+  },
+  {
+    "root": "state",
+    "path": "noctalia/.setup-complete"
+  },
+  {
+    "root": "state",
+    "path": "noctalia/community-templates"
+  },
+  {
+    "root": "home",
+    "path": ".vscode/extensions/noctalia.noctaliatheme-0.0.5"
+  },
+  {
+    "root": "home",
+    "path": ".oh-my-zsh"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/pfetch"
+  },
+  {
+    "root": "home",
+    "path": ".zshrc"
+  },
+  {
+    "root": "home",
+    "path": ".zprofile"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/dotfiles-session-start"
+  },
+  {
+    "root": "config",
+    "path": "environment.d/20-dotfiles.conf"
+  },
+  {
+    "root": "config",
+    "path": "xdg-desktop-portal/niri-portals.conf",
+    "compositors": [
+      "niri"
+    ]
+  },
+  {
+    "root": "config",
+    "path": "hypr",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "config",
+    "path": "hyprltm"
+  },
+  {
+    "root": "config",
+    "path": "Hyprlock-Styles",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "config",
+    "path": "waybar"
+  },
+  {
+    "root": "config",
+    "path": "swaync"
+  },
+  {
+    "root": "config",
+    "path": "wlogout"
+  },
+  {
+    "root": "config",
+    "path": "matugen",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "config",
+    "path": "dolphinrc"
+  },
+  {
+    "root": "config",
+    "path": "filetypesrc"
+  },
+  {
+    "root": "config",
+    "path": "kiorc"
+  },
+  {
+    "root": "config",
+    "path": "kdeglobals"
+  },
+  {
+    "root": "config",
+    "path": "mimeapps.list"
+  },
+  {
+    "root": "config",
+    "path": "user-dirs.dirs"
+  },
+  {
+    "root": "config",
+    "path": "waypaper/config.ini"
+  },
+  {
+    "root": "config",
+    "path": "autostart/org.keepassxc.KeePassXC.desktop"
+  },
+  {
+    "root": "config",
+    "path": "autostart/vesktop.desktop"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/hyprltm-net"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/modules"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/rofi-wallpaper"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/hyprmod",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/fetch"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/dotfiles-python"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/kecheenok1.py"
+  },
+  {
+    "root": "home",
+    "path": ".local/bin/kecheenok"
+  },
+  {
+    "root": "data",
+    "path": "color-schemes/noctalia.colors"
+  },
+  {
+    "root": "data",
+    "path": "applications/Kecheenok.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/brightness.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/equalizer-live.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/hyprltm-net.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/hyprmod.desktop",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "data",
+    "path": "applications/mac-changer.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/monitor-brightness.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/rofi-wallpaper.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/screenshare.desktop"
+  },
+  {
+    "root": "data",
+    "path": "applications/wifi-reboot.desktop"
+  },
+  {
+    "root": "data",
+    "path": "fonts/hypr",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "data",
+    "path": "fonts/hyprlock-styles",
+    "compositors": [
+      "hyprland"
+    ]
+  },
+  {
+    "root": "state",
+    "path": "noctalia/community-palettes"
+  },
+  {
+    "root": "config",
+    "path": "xdg-desktop-portal/hyprland-portals.conf",
+    "compositors": [
+      "hyprland"
+    ]
+  }
+]

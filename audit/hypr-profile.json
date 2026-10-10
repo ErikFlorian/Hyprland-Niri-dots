@@ -1,0 +1,291 @@
+{
+  "scope": "Read-only audit and payload export for optional Hyprland and alternative bar/notification profiles; installer was not run.",
+  "exports": {
+    "hypr": {
+      "source": "/home/kxnvra/.config/hypr",
+      "destination": "payload/config/hypr",
+      "files": [
+        "Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Scripts/songdetail.sh",
+        "colors.conf",
+        "colors.lua",
+        "current_wallpaper",
+        "hypridle.conf",
+        "hyprland-gui.lua",
+        "hyprland.lua",
+        "hyprlock.conf",
+        "hyprlock.png",
+        "hyprmod/user_curves.json",
+        "monitors-original.lua",
+        "monitors.lua",
+        "noctalia.lua",
+        "switch_layout.sh",
+        "vivek.png",
+        "wallpaper.conf",
+        "wp-matugen.sh"
+      ]
+    },
+    "hyprlock_styles": {
+      "source": "/home/kxnvra/.config/Hyprlock-Styles",
+      "destination": "payload/config/Hyprlock-Styles",
+      "files": [
+        "LICENSE",
+        "README.md",
+        "Style-1/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-1/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-1/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-1/Scripts/songdetail.sh",
+        "Style-1/hyprlock.conf",
+        "Style-1/hyprlock.png",
+        "Style-1/vivek.png",
+        "Style-10/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-10/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-10/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-10/hyprlock.conf",
+        "Style-10/hyprlock.png",
+        "Style-10/vivek.png",
+        "Style-2/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-2/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-2/Fonts/steelfish outline regular/steelfish.outline-regular.otf",
+        "Style-2/foreground.png",
+        "Style-2/hypr.png",
+        "Style-2/hyprlock.conf",
+        "Style-4/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-4/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-4/hyprlock.conf",
+        "Style-4/hyprlock.png",
+        "Style-4/vivek.png",
+        "Style-5/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-5/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-5/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-5/Scripts/songdetail.sh",
+        "Style-5/hyprlock.conf",
+        "Style-5/hyprlock.png",
+        "Style-6/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-6/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-6/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-6/Scripts/songdetail.sh",
+        "Style-6/hyprlock.conf",
+        "Style-6/hyprlock.png",
+        "Style-6/user.png",
+        "Style-7/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-7/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-7/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-7/Fonts/StretchPro/StretchPro.otf",
+        "Style-7/Fonts/Suisse Int'l Mono/Suisse Int'l Mono.ttf",
+        "Style-7/Scripts/songdetail.sh",
+        "Style-7/hyprlock.conf",
+        "Style-7/hyprlock.png",
+        "Style-8/Fonts/AlfaSlabOne-Regular/AlfaSlabOne-Regular.ttf",
+        "Style-8/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-8/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-8/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-8/Scripts/songdetail.sh",
+        "Style-8/hyprlock.conf",
+        "Style-8/hyprlock.png",
+        "Style-9/Fonts/JetBrains/JetBrains Mono Nerd.ttf",
+        "Style-9/Fonts/SF Pro Display/SF Pro Display Bold.otf",
+        "Style-9/Fonts/SF Pro Display/SF Pro Display Regular.otf",
+        "Style-9/Scripts/songdetail.sh",
+        "Style-9/hyprlock.conf",
+        "Style-9/hyprlock.png",
+        "Style-9/vivek.png"
+      ]
+    },
+    "waybar": {
+      "source": "/home/kxnvra/.config/waybar",
+      "destination": "payload/config/waybar",
+      "files": [
+        "Modules",
+        "ModulesCustom",
+        "ModulesGroups",
+        "ModulesWorkspaces",
+        "README.md",
+        "colors.css",
+        "config-niri.jsonc",
+        "config.jsonc",
+        "configs/[TOP] 0-Ja-0 Been modified",
+        "configs/bintang default",
+        "configs/mpris middle",
+        "configs/taskbar",
+        "configs/window middle",
+        "opacity.css",
+        "scripts/eduroam.sh",
+        "scripts/mic-status.sh",
+        "scripts/opacity.sh",
+        "style-niri.css",
+        "style.css",
+        "style/bintang default.css",
+        "style/full bar.css",
+        "style/islands no transparent.css",
+        "style/islands.css"
+      ]
+    },
+    "swaync": {
+      "source": "/home/kxnvra/.config/swaync",
+      "destination": "payload/config/swaync",
+      "files": [
+        "config.json",
+        "icons/backup.png",
+        "icons/battery-quarter-solid.svg",
+        "icons/battery-status.png",
+        "icons/brightness-100.png",
+        "icons/brightness-20.png",
+        "icons/brightness-40.png",
+        "icons/brightness-60.png",
+        "icons/brightness-80.png",
+        "icons/dropper.png",
+        "icons/microphone-mute.png",
+        "icons/microphone.png",
+        "icons/music.png",
+        "icons/palette.png",
+        "icons/picture.png",
+        "icons/timer.png",
+        "icons/uptime.png",
+        "icons/volume-high.png",
+        "icons/volume-low.png",
+        "icons/volume-mid.png",
+        "icons/volume-mute.png",
+        "icons/vpn.png",
+        "images/airplane.png",
+        "images/bell.png",
+        "images/error.png",
+        "images/ja.png",
+        "images/note.png",
+        "style.css",
+        "themes/control_center.css",
+        "themes/jakoolit.css",
+        "themes/notifications.css"
+      ]
+    },
+    "wlogout": {
+      "source": "/home/kxnvra/.config/wlogout",
+      "destination": "payload/config/wlogout",
+      "files": [
+        "layout",
+        "style.css"
+      ]
+    },
+    "sway": {
+      "source": "/home/kxnvra/.config/sway",
+      "destination": "payload/config/sway",
+      "files": [
+        "config",
+        "noctalia"
+      ]
+    },
+    "matugen": {
+      "source": "/home/kxnvra/.config/matugen",
+      "destination": "payload/config/matugen",
+      "files": [
+        "config.toml",
+        "templates/colors.css",
+        "templates/gtk-colors.css",
+        "templates/hyprland-colors.conf",
+        "templates/hyprland-colors.lua",
+        "templates/kitty-colors.conf",
+        "templates/matugen-cava",
+        "templates/midnight-discord.css",
+        "templates/rofi-colors.rasi",
+        "templates/rofi-network.rasi",
+        "templates/spotify-colors.ini",
+        "templates/wallpaper.conf"
+      ],
+      "source_original_config": "/home/kxnvra/dotfiles-arch-niri/audit/source-matugen-config.toml"
+    },
+    "hypr_fonts": {
+      "source": "/home/kxnvra/.config/hypr/Fonts",
+      "destination": "payload/data/fonts/hypr",
+      "files": [
+        "JetBrains/JetBrains Mono Nerd.ttf",
+        "SF Pro Display/SF Pro Display Bold.otf",
+        "SF Pro Display/SF Pro Display Regular.otf"
+      ]
+    }
+  },
+  "path_portability": {
+    "replacements": [
+      "/home/kxnvra/.config -> @DOTFILES_CONFIG@",
+      "/home/kxnvra -> @DOTFILES_HOME@"
+    ],
+    "eduroam_script": "Payload copy has identity, password, anonymous identity, and domain suffix cleared; source file left unchanged.",
+    "third_party_home_path": "Style-9/hyprlock.conf path to /home/vivek/.config/hypr/vivek.png changed in payload to @DOTFILES_CONFIG@/Hyprlock-Styles/Style-9/vivek.png."
+  },
+  "assets": {
+    "current_wallpaper": {
+      "source_link": "/home/kxnvra/.config/hypr/current_wallpaper",
+      "source_link_target": "/home/kxnvra/Pictures/07a937dfa5fcb675506b9622ad3802d4.jpg",
+      "source_link_status": "dangling; target is absent",
+      "payload": "payload/config/hypr/current_wallpaper (regular file, copy of payload/home/Wallpapers/$.jpg)",
+      "reason": "Materialized the existing wallpaper.conf fallback because the symlink target is unavailable."
+    },
+    "hyprlock": "hyprlock.conf references wallpaper.conf, hyprlock.png, vivek.png, Scripts/songdetail.sh, and SF Pro Display/JetBrains fonts; all config-local assets are exported.",
+    "noctalia_wallpaper": "All saved wallpaper paths, including black_1920x1200.png and wp12478612-monochrome-4k-wallpapers.jpg, are present in payload/home/Wallpapers.",
+    "waypaper": "Exported config has an empty post_command; wallpaper background selection is separate and the current compositor target uses Noctalia."
+  },
+  "source_revisions": {
+    "Hyprlock-Styles": {
+      "remote": "https://github.com/MrVivekRajan/Hyprlock-Styles.git",
+      "branch": "main",
+      "commit": "aa2e5d4c7b1544158e94beddb9d37a713071f3e3",
+      "commit_date": "2025-07-20",
+      "working_tree": "Source had deleted Style-3 tracked files; payload mirrors existing working checkout files and excludes .git and absent Style-3 assets."
+    },
+    "hyprland": "Installed Arch package hyprland 0.56.2-4; no separate plugin repository/configuration found."
+  },
+  "runtime": {
+    "active_target": "Bundle niri config starts Noctalia. SwayNC and wlogout actions now use Noctalia lock/session messages. Exported Hyprland/Sway/Waybar profiles remain optional; Waybar niri mode is not started by the current niri config.",
+    "hyprland_validation": "Hyprland --verify-config -c /home/kxnvra/.config/hypr/hyprland.lua returned config ok on installed Hyprland 0.56.2; no compositor session started.",
+    "installed_relevant_packages": [
+      "hyprland 0.56.2-4",
+      "hyprcursor 0.1.13-7",
+      "hyprland-guiutils 0.2.2-4",
+      "hyprlauncher 0.1.6-9",
+      "matugen 4.2.0-1",
+      "noctalia 5.2.1-1",
+      "waybar 0.15.0-3",
+      "swaync 0.12.6-1",
+      "wlogout 1.2.2-0",
+      "sway 1:1.12-4",
+      "brightnessctl 0.5.1-3",
+      "blueman 2.4.6-2",
+      "pavucontrol 1:6.2-1",
+      "cava 1.0.0-1",
+      "wireplumber 0.5.18-1",
+      "wl-clipboard 1:2.3.0-1",
+      "cliphist 1:0.7.0-2",
+      "network-manager-applet 1.36.0-2",
+      "grim 1.5.0-2",
+      "slurp 1.5.0-2",
+      "playerctl 2.4.1-5",
+      "libnotify 0.8.8-1",
+      "ttf-jetbrains-mono-nerd 3.5.1-2",
+      "swaylock-effects-git r470.496059a-1"
+    ],
+    "not_installed": [
+      "hyprlock",
+      "hypridle",
+      "hyprpaper",
+      "hyprpm"
+    ],
+    "hyprpm": "No hyprpm binary or repository config found; Lua GUI file declares no plugins but startup executes hyprpm reload twice (one in main Lua and one in generated GUI Lua). These calls are unavailable on this source system and should be guarded/removed for a functional optional profile.",
+    "cursor": "Hypr Lua requests HYPRCURSOR_THEME=Volantes-hyprcursor. That Hyprcursor package theme is absent from user/system icon dirs. Existing ~/.icons/volantes_cursors is classic Xcursor and is already bundled separately under data/icons; it is not a substitute for the named Hyprcursor theme.",
+    "matugen_optional_generator": "payload/config/matugen/config.toml now has set=false so it does not own wallpaper changes; app reload hooks check for a live matching process before signaling. GTK templates write colors.css, preserving gtk.css imports; Spicetify and GTK gtk.css overwrite templates are omitted."
+  },
+  "portable_profile_changes": [
+    "Preserved exact main/GUI originals in audit/source-hyprland*.lua.",
+    "Separate monitors.lua defaults to automatic; --keep-monitors selects monitors-original.lua with original eDP layout.",
+    "Classic Volantes Xcursor fallback replaces request for absent Volantes-hyprcursor theme.",
+    "Noctalia and dotfiles-session-start own autostart; removed competing SwayNC/cliphist/hypridle starts and duplicate portal startup.",
+    "Guarded hyprpm reload; no plugin repo declared or invented.",
+    "Removed duplicate Super+S binding, repaired blank scratchpad binds and scrolling focus, replaced chvt workaround with compositor reload."
+  ],
+  "remaining_reference_notes": [
+    "Inactive legacy Waybar templates still refer to Jakoolit scripts missing on the source computer; they are preserved for reference and not used by niri.",
+    "Waybar source config is a separate alternative; Noctalia remains the selected bar and notification manager.",
+    "Hypridle/hyprlock are installed only in the full profile and are intentionally not auto-started alongside Noctalia."
+  ],
+  "prepared_runtime": "Final niri and Hyprland configs passed local parsing and staged verification; no live compositor or installer execution was performed."
+}

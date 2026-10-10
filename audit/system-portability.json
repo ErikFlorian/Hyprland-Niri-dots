@@ -1,0 +1,84 @@
+{
+  "generated_on": "2026-10-10",
+  "scope": "Read-only portability audit of host settings and metadata. No installer or system service was executed or changed.",
+  "resolver": {
+    "resolv_conf": "/etc/resolv.conf -> /run/systemd/resolve/stub-resolv.conf",
+    "systemd_resolved": "enabled and active",
+    "network_manager": "enabled and active; NetworkManager.conf contains only comments/defaults",
+    "portable_action": "Keep systemd-resolved enabled on the target if NetworkManager uses the systemd-resolved stub symlink; otherwise use the target distro's default NetworkManager DNS setup. Do not copy DNS server addresses from the source connection."
+  },
+  "zram": {
+    "package": "zram-generator",
+    "config": "/etc/systemd/zram-generator.conf",
+    "config_summary": "[zram0], compression-algorithm = zstd",
+    "observed": "zram0 swap was active on source",
+    "bundle": "zram-generator is listed in packages/full.txt, but the config file is not deployed",
+    "portable_action": "Optionally add the small zstd config for low-memory VMs; skip if the target uses another swap/zram policy."
+  },
+  "flatpak": {
+    "package": "flatpak is in packages/full.txt",
+    "remote": "Flathub system remote configured",
+    "apps": [
+      "com.github.Matoking.protontricks",
+      "org.vinegarhq.Sober"
+    ],
+    "bundle": "The installer currently installs the Flatpak client but does not add a remote or install these application IDs.",
+    "portable_action": "Consider a separate declarative Flatpak app ID list and install it only in the full profile; the remote URL is https://dl.flathub.org/repo/."
+  },
+  "session_and_autostart": {
+    "installed_wayland_sessions": ["niri", "Hyprland", "Hyprland (uwsm-managed)", "Sway"],
+    "configured_primary_session": "niri",
+    "niri_config_autostart": ["noctalia"],
+    "xdg_autostart_files": [
+      "~/.config/autostart/Mailspring.desktop",
+      "~/.config/autostart/org.keepassxc.KeePassXC.desktop",
+      "~/.config/autostart/vesktop.desktop"
+    ],
+    "observed_niri_session": "systemd-xdg-autostart-generator generated a KeePassXC unit; it ran and exited. No Mailspring or Vesktop unit appeared in the session dependency list.",
+    "portable_action": "Do not copy all source autostart entries blindly. KeePassXC is in packages/full.txt; Mailspring is absent, Vesktop is in packages/full-aur.txt. If desired, retain only intentional entries and prefer package-provided launchers over Vesktop's source-specific /usr/lib/electron40 path."
+  },
+  "source_enabled_services": {
+    "included_by_installer_or_stock_user_services": [
+      "NetworkManager.service",
+      "bluetooth.service",
+      "power-profiles-daemon.service",
+      "systemd-timesyncd.service",
+      "fstrim.timer",
+      "cups.service",
+      "avahi-daemon.service",
+      "libvirtd.service",
+      "pipewire.socket",
+      "pipewire-pulse.socket",
+      "wireplumber.service"
+    ],
+    "additional_source_services": {
+      "systemd-resolved.service": "enabled and active; its resolver stub symlink is part of the current setup",
+      "seatd.service": "enabled; session uses systemd/logind, so only add if target software requires it",
+      "systemd-networkd.service": "networkd unit files exist, but source service was not in the enabled services list; no networkd config is included",
+      "daylight-gateway.service": "enabled user service points into a private project directory and is not portable; intentionally omit"
+    }
+  },
+  "hardware_or_host_specific": {
+    "do_not_copy_verbatim": [
+      "/etc/hostname",
+      "/etc/systemd/logind.conf.d/ignore-lid-switch.conf (ignores laptop lid events)",
+      "/etc/systemd/network/*.network",
+      "/etc/mkinitcpio.conf",
+      "GPU, CPU microcode, kernel, firmware, bootloader and DKMS settings"
+    ],
+    "locale": {
+      "etc_locale": "LANG=en_US.UTF-8",
+      "console_layout": "US; the graphical niri config separately sets us,cz",
+      "portable_action": "Choose target locale and console settings during the Arch base install."
+    }
+  },
+  "personal_or_project_data_excluded": [
+    "browser, mail, messaging, cloud sync, IDE, AI client and game profile databases/caches",
+    "~/.config/daylight* and the project-backed daylight-gateway service",
+    "credentials, tokens, account sessions, SSH/GPG keys and network connection secrets"
+  ],
+  "other_portable_gaps": [
+    "XDG utility launchers under ~/.local/share/applications are not currently bundled; include only those backed by exported helper scripts/packages and render the user's home path dynamically.",
+    "Do not export every top-level ~/.config directory: several are large account/cache stores rather than reusable preferences."
+  ]
+}

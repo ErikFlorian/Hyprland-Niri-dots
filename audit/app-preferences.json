@@ -1,0 +1,129 @@
+{
+  "purpose": "Reviewed, portable desktop and app preferences. This audit deliberately excludes application profiles, account data, caches, and history.",
+  "included": [
+    {
+      "root": "config",
+      "path": "dolphinrc",
+      "source": "~/.config/dolphinrc",
+      "reason": "Dolphin/KDE file dialog UI preferences only."
+    },
+    {
+      "root": "config",
+      "path": "filetypesrc",
+      "source": "~/.config/filetypesrc",
+      "reason": "Small KDE file type preference; no personal data."
+    },
+    {
+      "root": "config",
+      "path": "kiorc",
+      "source": "~/.config/kiorc",
+      "reason": "KIO confirmation preferences only."
+    },
+    {
+      "root": "config",
+      "path": "kdeglobals",
+      "source": "~/.config/kdeglobals (whitelisted visual, icon, widget, file dialog and window-color sections only)",
+      "reason": "Preserve Noctalia colors and KDE app appearance without exporting unrelated settings."
+    },
+    {
+      "root": "config",
+      "path": "mimeapps.list",
+      "source": "~/.config/mimeapps.list (rebuilt from reviewed entries)",
+      "reason": "Preserve common browser, image, video, text and Discord defaults using desktop IDs present on source and represented in package profiles; remove generated userapp IDs and unverified entries."
+    },
+    {
+      "root": "config",
+      "path": "user-dirs.dirs",
+      "source": "~/.config/user-dirs.dirs (normalized)",
+      "reason": "Portable standard XDG directories through $HOME; no source absolute path."
+    },
+    {
+      "root": "config",
+      "path": "waypaper/config.ini",
+      "source": "~/.config/waypaper/config.ini (rebuilt portable subset)",
+      "reason": "Waypaper UI defaults with swaybg suitable for niri, bundled Wallpapers folder, and installed matugen command; no stale selection, missing stylesheet or custom keybinding path."
+    },
+    {
+      "root": "data",
+      "path": "color-schemes/noctalia.colors",
+      "source": "~/.local/share/color-schemes/noctalia.colors",
+      "reason": "Required user Noctalia KDE color scheme referenced by kdeglobals."
+    }
+  ],
+  "dependencies": [
+    {
+      "configuration": "dolphinrc, filetypesrc, kiorc, kdeglobals",
+      "packages": [
+        "dolphin",
+        "qt6ct",
+        "Kvantum style/plugin",
+        "Noctalia color theme available in the deployed data directory",
+        "Breeze icon theme as selected by kdeglobals"
+      ]
+    },
+    {
+      "configuration": "mimeapps.list",
+      "packages": [
+        "zen-browser-bin",
+        "vesktop-bin",
+        "imv",
+        "vlc",
+        "mousepad",
+        "micro",
+        "obsidian"
+      ],
+      "note": "Uses desktop IDs verified on source; if a package is omitted on the target, remove its corresponding association or select another installed handler."
+    },
+    {
+      "configuration": "waypaper/config.ini",
+      "packages": [
+        "waypaper",
+        "swaybg",
+        "matugen"
+      ],
+      "note": "Waypaper is optional. Uses the dotfiles payload Wallpapers directory via @DOTFILES_HOME@, expanded by the deploy renderer."
+    }
+  ],
+  "omitted": [
+    {
+      "path": "~/.config/vlc/vlc-qt-interface.conf",
+      "reason": "Contains a large recent-media list with private filenames and home-directory paths; no history exported."
+    },
+    {
+      "path": "~/.config/vlc/vlcrc",
+      "reason": "Application-wide VLC settings were not needed for a reliable install; excludes the whole VLC profile rather than risk exporting private paths or transient state."
+    },
+    {
+      "path": "~/.config/waytrogen/config.json and config.toml",
+      "reason": "State names a specific Hyprpaper wallpaper and Hyprland script; waytrogen is not in package lists and niri uses Noctalia wallpaper handling."
+    },
+    {
+      "path": "~/.config/obs-studio/",
+      "reason": "Profile and scene data can capture hardware, sources, device IDs, and private stream endpoints; no OBS state was exported."
+    },
+    {
+      "path": "~/.config/qt6ct/qt6ct.conf",
+      "reason": "Already included in the existing manifest."
+    },
+    {
+      "path": "~/.config/Thunar/",
+      "reason": "Already included in the existing manifest."
+    },
+    {
+      "path": "~/.config/zed/settings.json",
+      "reason": "Already included in the existing manifest."
+    },
+    {
+      "path": "browser, Electron, mail, password manager, cloud sync, VPN, game and chat application data under ~/.config or ~/.local/share",
+      "reason": "Contains account profiles, credentials, session tokens, databases, device identifiers, histories, or machine-specific state; excluded wholesale."
+    },
+    {
+      "path": "~/.local/share/dolphin/ and other application state directories",
+      "reason": "Recent locations, metadata, caches, databases and histories are not portable preferences."
+    }
+  ],
+  "review_notes": [
+    "No passwords, access tokens, account profiles, recent-media lists, session data, private capture endpoints, or database files were copied.",
+    "No install script or application was run."
+  ]
+}

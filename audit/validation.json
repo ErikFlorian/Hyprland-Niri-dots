@@ -1,0 +1,52 @@
+{
+  "installer_executed": false,
+  "generated_date": "2026-10-10",
+  "checks": {
+    "bash_syntax": "passed",
+    "zsh_syntax": "passed",
+    "niri_config": "passed automatic VM and preserved physical monitor layouts",
+    "noctalia_config": "passed",
+    "foot_config": "passed",
+    "fuzzel_config": "passed",
+    "isolated_interactive_zsh": "passed",
+    "backup_engine_tests": 12,
+    "manifest": "passed",
+    "official_package_names": "194 names available in local synchronized repositories",
+    "hyprland_config": "passed automatic VM and preserved physical monitor layouts via --verify-config",
+    "portable_home": "passed both profiles: spaces in HOME and custom XDG roots",
+    "desktop_launchers": "passed desktop-file-validate",
+    "matugen_config": "passed TOML parse",
+    "payload_manifest": "all files covered; zero symlinks",
+    "shell_script_syntax": "passed 26 shell files",
+    "compositor_profile_selection": "passed: config, portal, launcher, package, Noctalia template and backup selection",
+    "entrypoint_scripts": "passed bash syntax and identical HOME/bundle copies; none executed",
+    "english_content": "passed: main/Waybar documentation, authored comments, helper messages and custom GUI text; original audit snapshots and upstream localization resources preserved",
+    "english_syntax_validation": "passed: 7 Bash files, custom GUI Python AST, Waybar JSONC and staged Hyprland configuration",
+    "payload_archive_tests": 9,
+    "payload_archive_roundtrip": "passed: all 63683 files / 677724772 bytes match original content and executable permissions",
+    "compact_bundle": "passed: both compositor catalogs and Bash installer syntax; raw payload absent",
+    "catalog_only_planning": "passed: allowed only for read-only check/show; real prepare/deploy still require payload sources"
+  },
+  "deployment_entries": 95,
+  "payload_files": 63683,
+  "payload_bytes": 677724772,
+  "limitations": [
+    "No clean VM installation was run.",
+    "AUR build availability is checked when the target installer runs.",
+    "Hardware features need support from the target VM or physical system.",
+    "Git/Python/Flatpak installation commands were prepared and reviewed but not executed."
+  ],
+  "compositor_deployment_entries": {
+    "niri": 87,
+    "hyprland": 92
+  },
+  "git_upload": {
+    "folder": "dotfiles-arch-git",
+    "total_files": 71,
+    "archive_parts": 23,
+    "archive_bytes": 577291728,
+    "max_part_bytes": 25165824,
+    "expanded_payload_in_upload": false,
+    "original_payload_preserved": true
+  }
+}

@@ -1,0 +1,3 @@
+# Source Flathub application IDs; install in the target user scope.
+com.github.Matoking.protontricks
+org.vinegarhq.Sober

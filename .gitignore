@@ -1,0 +1,7 @@
+# The expanded snapshot is retained locally; upload its verified archive parts.
+/payload/
+__pycache__/
+*.py[cod]
+/.payload-archives.tmp-*/
+/.payload-archives.old-*/
+/.payload-archives.verify-*/

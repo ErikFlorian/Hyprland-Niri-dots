@@ -1,0 +1,4 @@
+# niri runtime and session-specific dependencies.
+niri
+xdg-desktop-portal-gnome
+xwayland-satellite

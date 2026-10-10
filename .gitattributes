@@ -1,0 +1,2 @@
+# Preserve archive bytes exactly on every platform.
+payload-archives/*.tar.gz.part binary

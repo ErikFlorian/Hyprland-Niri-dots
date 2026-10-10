@@ -1,0 +1,8 @@
+# User-requested libraries from the working Python 3.14 user site.
+# Stored in an isolated environment, available via dotfiles-python.
+anthropic
+alpaca-py
+pandas
+python-dotenv
+bcsfe
+yt-dlp

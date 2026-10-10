@@ -1,0 +1,17 @@
+# Hyprland runtime, HyprMod system dependencies and optional Hyprland tools.
+awww
+gobject-introspection
+gtk4
+hypridle
+hyprland
+hyprlauncher
+hyprlock
+hyprpaper
+hyprpolkitagent
+libadwaita
+matugen
+python-cairo
+python-gobject
+uv
+uwsm
+xdg-desktop-portal-hyprland

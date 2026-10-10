@@ -1,0 +1,23 @@
+base: Base system must already be installed
+efibootmgr: Keep target EFI setup
+grub: Keep target bootloader
+intel-media-driver: GPU specific
+intel-ucode: CPU specific
+libva-intel-driver: GPU specific
+linux: Keep the target VM kernel
+linux-firmware: Select firmware for the target hardware
+linux-headers: Keep target kernel headers
+mkinitcpio: Keep target initramfs configuration
+neofetch: Archived upstream; pfetch and fastfetch are bundled/installed
+pfetch: Bundled working shell script
+plymouth: Keep target boot splash
+swaylock-effects-git: Noctalia handles the current lock screen
+v4l2loopback-dkms: Kernel specific optional OBS loopback
+vulkan-intel: GPU specific
+vulkan-nouveau: GPU specific
+vulkan-radeon: GPU specific
+xf86-video-amdgpu: GPU specific
+xf86-video-ati: GPU specific
+xf86-video-nouveau: GPU specific
+yay: Bootstrapped only if AUR needed
+yay-debug: Debug symbols are unnecessary

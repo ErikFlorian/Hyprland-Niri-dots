@@ -1,0 +1,5 @@
+# Recreate actually installed Python commands in isolated uv tool environments.
+httpx2[cli]
+websockets
+python-dotenv[cli]
+bcsfe
